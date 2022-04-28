@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* clearfix */
+.clear {
+  clear: both;
+}
+
+/* dropdown&button */
+.dropbutton .dropdown-toggle {
+  border-radius: 0;
+  background-color: rgb(246, 245, 244);
+  color: black;
+  text-transform: capitalize;
+  border: none;
+}
+.dropbutton .tmbl {
+  border-radius: 0;
+}
+/* header */
+.header h2 {
+  font-family: fredoka;
+}
+.header .tombol-2 {
+  margin-left: -10px;
+}
+.header .tombol-2,
+.header input {
+  border: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+/* feedback */
+.feedback {
+  margin-left: -27px;
+}
+.feedback .tmbl-3 {
+  position: fixed;
+  z-index: 3;
+  transform: rotate(90deg);
+}
+/* carousel */
+.hero img {
+  height: 500px;
+}
+.hero .carousel-item h5,
+p {
+  z-index: 2;
+  position: relative;
+  font-family: syne mono;
+}
+.hero .carousel-item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+/* information */
+.information .container-fluid .row .col-3 {
+  margin-right: 10px;
+  margin-top: 50px;
+  height: 480px;
+  width: 250px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  box-shadow: 5px 5px 1px gray;
+  overflow: hidden;
+}
+.information img {
+  width: 250px;
+  height: 150px;
+  margin-left: -13px;
+}
+.information h5 {
+  display: inline-block;
+  position: absolute;
+  margin-top: -23px;
+  margin-left: -12px;
+  padding: 3px;
+  width: 120px;
+  text-align: center;
+  border-top-right-radius: 20px;
+  background-color: rgb(0, 124, 186);
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.information h4 {
+  margin: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  color: rgb(0, 124, 186);
+  font-family: roboto;
+  font-weight: bolder;
+}
+.information p {
+  text-align: center;
+  font-family: roboto;
+  font-weight: bold;
+}
+.information a {
+  text-decoration: none;
+  font-family: roboto;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* news */
+.news {
+  background-color: rgb(0, 124, 186);
+  height: 350px;
+  margin-top: 50px;
+}
+.news .container-fluid .row .col-3 {
+  height: 300px;
+  width: 250px;
+  margin-right: 10px;
+}
+.news h3 {
+  color: white;
+  margin-top: 40px;
+}
+.news .btn-news {
+  margin-top: 70%;
+  color: white;
+  border: 1px solid white;
+}
+.news .date {
+  margin-top: 45px;
+  font-family: arial;
+  text-transform: uppercase;
+  color: white;
+}
+.news .newss {
+  font-family: arial;
+  color: white;
+}
+.news .dua,
+.tiga,
+.empat {
+  border-bottom: 3px solid white;
+}
+.news .container-fluid .row .col-3:hover {
+  cursor: pointer;
+}
+/* footer */
+.footer {
+  background-color: rgb(246, 245, 244);
+}
+.footer p {
+  text-align: center;
+  padding: 15px;
+  font-family: arial;
+}
+.footer a {
+  text-decoration: none;
+}
+
+/* responsive brakpoint */
+@media (max-width: 1180px) {
+  .dropbutton .dropdown {
+    margin-left: 66%;
+  }
+}
+@media (max-width: 1050px) {
+  .dropbutton .dropdown {
+    margin-left: 53%;
+  }
+  .news .container-fluid .row .col-3 {
+    overflow: hidden;
+  }
+  .news .tiga,
+  .news .empat {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .feedback {
+    display: none;
+  }
+  .dropbutton .dropdown {
+    margin-left: 40%;
+  }
+  .hero img {
+    height: 370px;
+  }
+  .hero .carousel-item p {
+    font-size: 13px;
+  }
+  .hero .carousel-item h5 {
+    font-size: 16px;
+  }
+  .news .container-fluid .row .col-3 {
+    width: 180px;
+  }
+  .news .empat {
+    display: none;
+  }
+  .news .date {
+    font-size: 15px;
+  }
+  .news .newss {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  .feedback {
+    display: none;
+  }
+  .tmbl {
+    display: none;
+  }
+  .hero img {
+    height: 330px;
+  }
+  .hero .carousel-item p {
+    font-size: 12px;
+  }
+  .hero .carousel-item h5 {
+    font-size: 14px;
+  }
+  .information .container-fluid .row .col-3 {
+    width: 220px;
+  }
+  .information h5 {
+    font-size: 12px;
+    margin-top: -20px;
+  }
+  .information p {
+    font-size: 14px;
+  }
+  .information a {
+    font-size: 14px;
+  }
+  .news .container-fluid .row .col-3 {
+    width: 150px;
+  }
+  .news h3 {
+    font-size: 23px;
+  }
+  .news .date {
+    font-size: 14px;
+  }
+  .news .newss {
+    font-size: 13px;
+  }
+  .news .tiga,
+  .news .empat {
+    display: none;
+  }
+}

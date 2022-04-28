@@ -1,0 +1,76 @@
+body {
+  background-color: rgb(105, 197, 208);
+}
+/* button */
+.navbar .tombol1 {
+  border-radius: 40px;
+  border: 2px solid blue;
+}
+/* jumbotron */
+.main img {
+  width: 50%;
+  height: 500px;
+  margin-left: 35%;
+  position: absolute;
+  z-index: 1;
+}
+.main h2 {
+  color: bisque;
+  font-size: 50px;
+  margin-top: 5%;
+  text-transform: capitalize;
+  position: absolute;
+  z-index: 2;
+}
+.main p {
+  position: absolute;
+  color: bisque;
+  text-transform: capitalize;
+  font-size: 25px;
+  margin-top: 21%;
+  z-index: 2;
+}
+
+/* RESPONSIVE BREAKPOINT */
+@media (max-width: 991px) {
+  /* jumbotron */
+  .main img {
+    width: 60%;
+    height: 50%;
+    margin-left: 150px;
+    margin-top: 100px;
+  }
+  .main h2 {
+    margin-top: 10px;
+  }
+  .main p {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 768px) {
+  /* jumbotron */
+  .main img {
+    width: 70%;
+    margin-left: 80px;
+    margin-top: 60px;
+  }
+  .main h2 {
+    margin-left: -10px;
+  }
+  .main p {
+    font-size: 20px;
+    margin-top: 370px;
+  }
+}
+@media (max-width: 600px) {
+  /* jumbotron */
+  .main img {
+    width: 70%;
+    height: 30%;
+    margin-left: 100px;
+    margin-top: 150px;
+  }
+  .main p {
+    font-size: 20px;
+  }
+}

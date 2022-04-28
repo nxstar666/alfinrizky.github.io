@@ -1,0 +1,44 @@
+a {
+  text-decoration: none;
+}
+.navbar-brand {
+  font-family: prompt;
+}
+.jumbotron {
+  padding-top: 7rem;
+  background-image: url(img/jumbotron1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.jumbotron h1,
+.jumbotron p {
+  text-shadow: 15px 5px 5px black;
+}
+#projects {
+  background-color: #e2edff;
+}
+section {
+  padding-top: 5rem;
+}
+.display-4,
+.lead {
+  font-family: lobster;
+}
+.lead {
+  text-decoration: underline;
+}
+.heading {
+  font-family: indie flower;
+}
+#contact a {
+  text-decoration: none;
+}
+#contact img {
+  margin-top: -10px;
+}
+#projects .thumb {
+  height: 400px;
+}
+.modal img {
+  width: 100%;
+}
